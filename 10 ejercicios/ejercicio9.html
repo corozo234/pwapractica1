@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Pasatiempos</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #006064;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery a img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery a img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .gallery a img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mis Pasatiempos</h1>
+  <p>Haz clic en las fotos para verlas en grande</p>
+
+  <div class="gallery">
+    <a href="imagenes/Foto1.jpg" target="_blank">
+      <img src="imagenes/Foto1.jpg" alt="Foto 1">
+    </a>
+
+    <a href="imagenes/Foto2.jpg" target="_blank">
+      <img src="imagenes/Foto2.jpg" alt="Foto 2">
+    </a>
+
+    <a href="imagenes/Foto3.jpg" target="_blank">
+      <img src="imagenes/Foto3.jpg" alt="Foto 3">
+    </a>
+  </div>
+
+</body>
+</html>

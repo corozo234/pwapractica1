@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diseño de Caja con Slider</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .caja {
+      background-color: #caf0f8;
+      border: 3px solid #0077b6;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .slider {
+      width: 100%;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="caja">
+    <h2>Bienvenid@</h2>
+    <input class="slider" type="range" min="0" max="100" value="50">
+    <p>Mueve el control para explorar</p>
+  </div>
+
+</body>
+</html>
+

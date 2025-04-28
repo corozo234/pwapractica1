@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Biografía Completa</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #006064;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    /* Contenido principal */
+    .contenido {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .principal {
+      flex: 3;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #006064;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+      .contenido {
+        flex-direction: column;
+      }
+
+      .principal, .sidebar {
+        flex: none;
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Mi Biografía</h1>
+    <p>Conoce más sobre mí y mis pasatiempos favoritos</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="contenido">
+    <!-- Sección principal -->
+    <div class="principal">
+      <h2>Sobre mí</h2>
+      <p>Mi nombre es Patrick Corozo. Soy estudiante de Sistemas Inteligentes y me encanta el futbol, disfruto mucho practicandolo.</p>
+
+      <h2>Mis Pasatiempos</h2>
+      <p>En mi tiempo libre, me encanta explorar nuevos lugares, practicar deportes al aire libre. También disfruto mucho aprendiendo sobre nuevas tecnologías y tendencias en el diseño web.</p>
+
+      <h2>Proyectos Recientes</h2>
+      <p>He estado trabajando en varios proyectos web, tareas de la Universidad</p>
+    </div>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+      <h3>Enlaces Rápidos</h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#biografia">Biografía</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://www.instagram.com/patrickson_047/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@patrickson_047" target="_blank">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Patrick Corozo. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
